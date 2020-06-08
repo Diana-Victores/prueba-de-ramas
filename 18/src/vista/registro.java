@@ -12,7 +12,7 @@ import modelo.Usuarios;
 
 /**
  *
- * @author Marko
+ * @author Diana
  */
 public class registro extends javax.swing.JFrame {
 

@@ -9,7 +9,7 @@ import modelo.Usuarios;
 
 /**
  *
- * @author Marko
+ * @author Diiana
  */
 public class menu extends javax.swing.JFrame {
 
@@ -39,6 +39,7 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem3 = new javax.swing.JMenuItem();
+        jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuProductos = new javax.swing.JMenu();
         subMenuAddProducto = new javax.swing.JMenuItem();
@@ -50,12 +51,30 @@ public class menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 102, 153));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 428, Short.MAX_VALUE)
+        );
+
         menuProductos.setText("Productos");
 
-        subMenuAddProducto.setText("Agregar");
+        subMenuAddProducto.setText("Mantenimientos ");
+        subMenuAddProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subMenuAddProductoActionPerformed(evt);
+            }
+        });
         menuProductos.add(subMenuAddProducto);
 
-        subMenuEditProducto.setText("Modificar");
+        subMenuEditProducto.setText("Catalogo");
         menuProductos.add(subMenuEditProducto);
 
         jMenuBar1.add(menuProductos);
@@ -73,15 +92,19 @@ public class menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void subMenuAddProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuAddProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_subMenuAddProductoActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -118,6 +141,7 @@ public class menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu menuProductos;
     private javax.swing.JMenu menuProveedores;
     private javax.swing.JMenuItem subMenuAddProducto;
