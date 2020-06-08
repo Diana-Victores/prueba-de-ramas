@@ -9,7 +9,7 @@ import modelo.Usuarios;
 
 /**
  *
- * @author Marko
+ * @author Diana
  */
 public class menu extends javax.swing.JFrame {
 
